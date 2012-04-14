@@ -36,8 +36,9 @@ time.sleep(3)
 while (loopNumber <= 5):
 	
 	xf = float(input("Nodlehs dice: Cual es el espacio recorrido? (En metros) "))
-	t = 0.5*9.8/xf
-	t = math.sqrt(t)
+	g = 9.81
+	div = 9.81*0.5
+	t = math.sqrt(xf/div)
 	
 	print("El tiempo de reaccion es de ",t," segundos")
 	
