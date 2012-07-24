@@ -40,7 +40,7 @@ while (loopNumber <= 5):
 	div = 9.81*0.5
 	t = math.sqrt(xf/div)
 	
-	print("El tiempo de reaccion es de ",t," segundos")
+	print("El tiempo de reaccion es de %s s" % t)
 	
 	time.sleep(5)
 	
@@ -55,10 +55,10 @@ while (loopNumber <= 5):
 	d4 = float(v4*t+v4*v4*commonCalc)
 	d5 = float(v5*t+v5*v5*commonCalc)
 
-	print("La distancia de seguridad a ",v1,"m/s es de ", d1,"m")
-	print("La distancia de seguridad a ",v2,"m/s es de ", d2,"m")
-	print("La distancia de seguridad a ",v3,"m/s es de ", d3,"m")
-	print("La distancia de seguridad a ",v4,"m/s es de ", d4,"m")
-	print("La distancia de seguridad a ",v5,"m/s es de ", d5,"m")
+	print("La distancia de seguridad a %s m/s es de %s m" %(v1, d1))
+	print("La distancia de seguridad a %s m/s es de %s m" %(v2, d2))
+	print("La distancia de seguridad a %s m/s es de %s m" %(v3, d3))
+	print("La distancia de seguridad a %s m/s es de %s m" %(v4, d4))
+	print("La distancia de seguridad a %s m/s es de %s m" %(v5, d5))
 	loopNumber = loopNumber+1
 print("El programa finalizo con exito")
